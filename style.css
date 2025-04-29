@@ -1,0 +1,415 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.translate {
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+#google_translate_element select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0px !important;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Add this in your CSS */
+
+/* Flex for Header */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.logo {
+    width: 60px; /* Adjust size */
+    height: auto;
+    margin-right: 15px;
+}
+ 
+header h1 {
+    font-size: 1.8rem;
+    flex-grow: 1;
+}
+
+/* Adjust Nav a bit */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Hero Section */
+.hero {
+    background: #0099cc;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Courses Section */
+./* Courses Section */
+./* Courses Section Styles */
+#courses {
+    padding: 60px 20px;
+    background-color: #f3f4f6;
+    text-align: center;
+  }
+  
+  #courses h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .course-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 6px solid #4f46e5;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .course-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1d4ed8;
+    margin-bottom: 8px;
+  }
+  
+  .course-card p {
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  
+  .course-announcement {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    font-weight: 500;
+  }
+  
+  .course-announcement span {
+    color: #eab308;
+    font-weight: 700;
+  }
+  .certificate-gallery {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .certificate-gallery h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .certificate-gallery .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+    border-color: #003366;
+  }
+  
+/* Reviews Section */
+.reviews {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+.review-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    min-height: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.review-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Responsive Reviews */
+@media (max-width: 768px) {
+    .review-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background: #0055aa;
+}
+
+#contact-info {
+    background-color: #f3f4f6;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+  }
+  
+  #contact-info .contact-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #111827;
+  }
+  
+  #contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  #contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    color: white;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    color: white;
+    filter: brightness(0) invert(1); /* Makes SVG icons white */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(1);
+    color: white;
+     /* Make icons white */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) hue-rotate(180deg);
+    color: white;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+  }
+  
+  .whatsapp-float:hover {
+    background-color: #1ebe5b;
+  }
+  
+
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
